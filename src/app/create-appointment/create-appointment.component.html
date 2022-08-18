@@ -1,0 +1,52 @@
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+        
+    <a style="color: white;" class="navbar-brand" href="#">APOLLO HOSPITALS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+            <a style="color: white;"class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/appointmentlist">Back</a>
+        
+          </ul>
+      
+    </div>
+</nav>
+<div class="container">
+<hr>
+<hr>
+<hr>
+<h2>Add New Appointment</h2>
+<form (ngSubmit) = "onSubmit()">
+
+    <div class="form-group">
+        <label>ID</label>
+        <input type="number" class="form-control" id="id" [(ngModel)]="appointment.id" name="id" placeholder="Enter ID">
+    </div>
+
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="appointment.name" name="name" placeholder="Enter Name">
+    </div>
+
+    <div class="form-group">
+        <label>Age</label>
+        <input type="text" class="form-control" id="age" [(ngModel)]="appointment.age" name="age" placeholder="Enter Age">
+    </div>
+
+    <div class="form-group">
+        <label>Symptoms</label>
+        <input type="text" class="form-control" id="symptoms" [(ngModel)]="appointment.symptoms" name="symptoms" placeholder="Enter Symptoms">
+    </div>
+
+    <div class="form-group">
+        <label>Number</label>
+        <input type="text" class="form-control" id="number" [(ngModel)]="appointment.number" name="number" placeholder="Enter Number">
+    </div>
+
+    <button class="btn btn-success" type="submit">Submit</button>
+
+</form>
+</div>

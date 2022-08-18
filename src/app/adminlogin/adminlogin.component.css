@@ -1,0 +1,15 @@
+.card{
+    border: none;
+    border-radius: 30px;
+    width: 500px;
+    padding: 40px;
+    top: 40%;
+    left: 30%;
+    transform: translate(30%, -25%); 
+    background: rgb(158, 219, 219);
+    justify-content: center;
+    color: navy;
+    justify-items: center;
+    box-shadow: 10px 10px 10px rgb(120, 120, 120);
+    
+}

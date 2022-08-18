@@ -1,0 +1,39 @@
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+        
+    <a style="color: white;" class="navbar-brand" href="#">APOLLO HOSPITALS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a style="color: white;"class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/medicinelist">Back</a>
+          </ul>
+          
+      
+    </div>
+</nav>
+<div class="container">
+    <hr>
+    <hr>
+    <hr>
+    <h3>Add Medicine</h3>
+    <form (ngSubmit) = "onSubmit()">
+        <div class="form-group">
+            <label> ID </label>
+            <input type="number" class="form-control" [(ngModel)]="medicine.id" id="id" name="id">
+        </div>
+
+        <div class="form-group">
+            <label> Drug Name</label>
+            <input type="text" class="form-control" [(ngModel)]="medicine.drugName" id="drugName" name="drugName">
+        </div>
+
+        <div class="form-group">
+            <label> Stock </label>
+            <input type="text" class="form-control" [(ngModel)]="medicine.stock" id="stock" name="stock">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+    </div>

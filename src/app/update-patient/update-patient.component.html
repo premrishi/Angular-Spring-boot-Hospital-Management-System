@@ -1,0 +1,67 @@
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+        
+    <a style="color: white;" class="navbar-brand" href="#">APOLLO HOSPITALS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+          </ul>
+      
+    </div>
+  
+  </nav>
+  <div class="container">
+  <div class="col-md-6-offset-md-3">
+    <hr>
+    <hr>
+    <hr>
+  <h3>Update Patient</h3>
+  <form (ngSubmit) = "onSubmit()">
+    <div class="form-group">
+      <label>ID</label>
+      <input type="number" class="form-control" id="id" [(ngModel)]="patient.id" name="id" >
+    </div>
+
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" class="form-control" name="name" [(ngModel)]="patient.name" name="name" >
+    </div>
+
+    <div class="form-group">
+      <label>Age</label>
+      <input type="text" class="form-control" name="age" [(ngModel)]="patient.age" name="age" >
+    </div>
+
+    <div class="form-group">
+      <label>Blood Type</label>
+      <input type="text" class="form-control" name="blood" [(ngModel)]="patient.blood" name="blood" >
+    </div>
+
+    <div class="form-group">
+      <label>Prescription</label>
+      <input type="text" class="form-control" name="prescription" [(ngModel)]="patient.prescription" name="prescription" >
+    </div>
+
+    <div class="form-group">
+      <label>Dosage</label>
+      <input type="text" class="form-control" name="dose" [(ngModel)]="patient.dose" name="dose" >
+    </div>
+
+    <div class="form-group">
+      <label>Fees</label>
+      <input type="text" class="form-control" name="fees" [(ngModel)]="patient.fees" name="fees" >
+    </div>
+
+    <div class="form-group">
+      <label>Urgency</label>
+      <input type="text" class="form-control" name="urgency" [(ngModel)]="patient.urgency" name="urgency" >
+    </div>
+
+    <button class="btn btn-success" type="submit">Submit</button>
+
+  </form>
+  </div>
+  </div>
+  

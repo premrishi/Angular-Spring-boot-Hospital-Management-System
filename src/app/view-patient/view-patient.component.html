@@ -1,0 +1,48 @@
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+        
+    <a style="color: white;" class="navbar-brand" href="#">APOLLO HOSPITALS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+            <a style="color: white;"class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/docdash">Back</a>
+        
+          </ul>
+      
+    </div>
+  
+  </nav>
+<hr>
+<hr>
+<hr>
+<div class="container">
+    <h3>Patient Diagnosis Details</h3>
+<div>
+<div>
+    <label> <b> Name: </b></label> {{patient.name}}
+</div>
+
+<div>
+    <label> <b> Age: </b></label> {{patient.age}}
+</div>
+
+<div>
+    <label> <b> Blood Type: </b></label> {{patient.blood}}
+</div>
+
+<div>
+    <label> <b> Dosage </b></label> {{patient.dose}}
+</div>
+
+<div>
+    <label> <b> Urgency </b></label> {{patient.urgency}}
+</div>
+
+<div>
+    <label> <b> Detailed Diagnosis & Prescription: </b></label> {{patient.prescription}}
+</div>    
+</div>
+</div>

@@ -1,0 +1,56 @@
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+        
+    <a style="color: white;" class="navbar-brand" href="#">APOLLO HOSPITALS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+            <a style="color: white;"class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/admindash">Back</a>
+          
+            <li class="nav-item">
+              <a style="color: white;"class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/createappointment">Add Appointments</a>
+          </ul>
+
+      
+    </div>
+</nav>
+
+<div class="container">
+<hr>
+<hr>
+<hr>
+<h2>Appointment List</h2>
+<a style="color: rgb(86, 86, 86); font-size: x-large;">Welcome to Appointment list page. Click Add Appointments to Add appointments</a>
+  <hr>
+<table class="table table-striped">
+    <thead class="table-header">
+        <tr>
+            <th> ID </th>
+            <th> Name </th>
+            <th> Age </th>
+            <th> Symptoms </th>
+            <th> Number </th>
+            <th> Action </th>
+            
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let appointment of appointments">
+            <td> {{ appointment.id }} </td>
+            <td> {{ appointment.name }} </td>
+            <td> {{ appointment.age }} </td>
+            <td> {{ appointment.symptoms }} </td>
+            <td> {{ appointment.number }} </td>
+
+            <td>
+                
+                <button (click)="deleteAppointment(appointment.id)" class="btn btn-danger" style="margin-left: 10px"> Delete</button>
+            </td>
+        </tr>
+        
+</table>
+</div>

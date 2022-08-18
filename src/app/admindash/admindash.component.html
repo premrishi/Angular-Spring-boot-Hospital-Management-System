@@ -1,0 +1,76 @@
+
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+        
+    <a style="color: white;" class="navbar-brand" href="#">APOLLO HOSPITALS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+        
+
+        <li class="nav-item">
+            <a style="color: white;"class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/appointmentlist">Appointments</a>
+          </li>
+
+        
+        
+      </ul>
+
+      <div class="mx-2">
+        
+        <button style="margin: 5px;"class="btn btn-danger" data-toggle="modal" data-target="#loginModal"><a style="color:white;" href="javascript:void(0);" routerLink="/home">Logout</a></button>
+        
+    </div>
+      
+    </div>
+  
+  </nav>
+  
+  <div class="container">
+    <hr>
+  <hr>
+  <hr>
+    <h2>Admin Dashboard</h2>
+    <a style="color: rgb(86, 86, 86); font-size: x-large;"><marquee behavior="scroll" direction="left">
+      Welcome to Admin Dashboard. Please find the patient list below!!. Click Appointments to view and update Appointments, Click Add Appointment to add new Appointment</marquee></a>
+  <hr>
+    <input type="text" name="search" [(ngModel)]="searchText" placeholder="Search"> 
+    <br>
+    <a style="color: rgb(86, 86, 86); font-size: xx-large;">Current Patient List in the Queue</a>
+<div class="tableFixHead">
+  <br>
+  <table class="table table-striped">
+    <thead class="table-header">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        
+        
+        
+        <th>Fees</th>
+        <th>Urgency</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let patient of patients | filter:searchText">
+        <td>{{patient.id}}</td>
+        <td>{{patient.name}}</td>
+        <td>{{patient.age}}</td>
+        
+        
+        
+        <td>{{patient.fees}}</td>
+        <td>{{patient.urgency}}</td>
+        <td>
+          
+          <button (click) = "deletePatient(patient.id)" class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  
