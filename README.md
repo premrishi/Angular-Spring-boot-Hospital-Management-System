@@ -1,6 +1,20 @@
 # HospitalProject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
+The Hospital Management Application is built with Angular and Springboot. The primary objective of the project is to create a hospital management website which can be accessed by the doctor and admin. The doctor has the authority to view the current list of patients who are under treatment, including their diagnosis details. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
+
+## Tech Stack
+
+**Client:** Angular, HTML, Typescript, CSS, Javascript
+
+**Server:** Spring boot, Java
+
+**Database:** MySQL8, Work bench CE-8
+
+## Screenshots
+1. Home Page of the Application:
+
+![Home page](https://user-images.githubusercontent.com/27400082/185591948-646bd11f-3bd0-4a44-ad5b-e0ae3add82d6.JPG)
+
 
 ## Development server
 
